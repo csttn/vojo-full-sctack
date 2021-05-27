@@ -44,7 +44,7 @@ export class AuthController {
   ): Promise<object> {
     const accessToken = await this.authService.signinUser(loginUserDto);
 
-    res.header('Vojo-Authorization', `${accessToken}`);
+    res.header('VojoAuthorization', `${accessToken}`);
     res.end();
 
     return { data: null };

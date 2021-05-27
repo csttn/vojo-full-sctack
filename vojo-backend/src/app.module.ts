@@ -5,7 +5,7 @@ import { AuthModule } from '@/modules/auth/auth.module';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { JobsModule } from './jobs/jobs.module';
+import { JobsModule } from './modules/jobs/jobs.module';
 
 @Module({
   controllers: [AppController],

@@ -20,7 +20,7 @@ export interface IJobs extends Document {
   };
   education: string;
   company: string;
-  imageUrl: string;
+  imageUrl?: string;
   assignments: Array<string>;
   isActive: boolean;
   workingHours: string;
