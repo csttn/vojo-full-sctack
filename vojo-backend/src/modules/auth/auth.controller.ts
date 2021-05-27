@@ -33,7 +33,7 @@ export class AuthController {
   ): Promise<object> {
     const user = await this.authService.createUser(registerUserDto);
 
-    return { data: {} };
+    return { data: { user } };
   }
 
   @Post('login')
